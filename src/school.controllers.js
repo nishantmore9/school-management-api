@@ -69,7 +69,7 @@ const listSchools = (req, res) => {
 
     schools.sort((a, b) => a.distance - b.distance);
 
-    res.status(200).json(schools);
+    res.status(200).json({schoolList : schools});
   });
 }
 

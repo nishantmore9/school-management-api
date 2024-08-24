@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 10000
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.status(200).json({message : "school-management-api assignment" })
+  res.status(200).json({message : "school-management-api assignment | Nishant More" })
 })
 app.use("/api/v1/school", schoolRouter)
 
