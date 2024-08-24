@@ -6,7 +6,7 @@ import dotenv from "dotenv"
 import schoolRouter from "./src/school.routes.js"
 
 const app = express();
-const PORT = process.env.PORT || 8000
+const PORT = process.env.PORT || 10000
 app.use(express.json());
 
 app.use("/api/v1/school", schoolRouter)
