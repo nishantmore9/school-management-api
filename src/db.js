@@ -3,6 +3,7 @@ import dotenv from "dotenv"
 
 dotenv.config()
 
+//for local db
 // export const db = mysql.createConnection({
 //   host: process.env.DB_HOST,
 //   user: process.env.DB_USER,
@@ -11,6 +12,6 @@ dotenv.config()
 // });
 
 // for deployment
-const dbUrl = `mysql://${process.env.MYSQLUSER}:${process.env.MYSQL_ROOT_PASSWORD}@${process.env.RAILWAY_PRIVATE_DOMAIN}:${process.env.MYSQLPORT}/${process.env.MYSQL_DATABASE}`
+const dbUrl = `mysql://${process.env.MYSQLUSER}:${process.env.MYSQL_ROOT_PASSWORD}@${process.env.RAILWAY_PRIVATE_DOMAIN}:3306/${process.env.MYSQL_DATABASE}`
 
 export const db = mysql.createConnection(dbUrl);
